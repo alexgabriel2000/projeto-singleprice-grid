@@ -1,0 +1,126 @@
+:root {
+    --cor-ciano: hsl(179, 62%, 43%);
+    --amarelo-brilhante: hsl(71, 73%, 54%);
+    --cinza-claro: hsl(204, 43%, 93%);
+    --azul-acinzentado: hsl(218, 22%, 67%);
+    --fonte-principal: "Karla", sans-serif;
+}
+
+* {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    box-sizing: border-box;
+    background-color: var(--cinza-claro);
+}
+
+.main__Content {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "community community"
+    "subscribe benefits";
+    justify-content: center;
+    align-content: center;
+}
+
+/* SEÇÃO COMUNIDADE */
+
+.secao__community {
+    grid-area: community;
+    background-color: white;
+    padding: 2em;
+}
+
+.secao__community h1 {
+    color: var(--cor-ciano);
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.secao__community h2 {
+    color: var(--amarelo-brilhante);
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.secao__community p {
+    color: var(--azul-acinzentado);
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+/* SEÇÃO INSCRIÇÃO */
+
+.secao__subscribe {
+    grid-area: subscribe;
+    background-color: var(--cor-ciano);
+    padding: 2em;
+}
+
+.secao__subscribe h2 {
+    color: var(--cinza-claro);
+    font-weight: 700;
+    padding-bottom: 1.5em;
+}
+
+.secao__subscribe p strong {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.secao__subscribe p span {
+    color: hsla(203, 44%, 93%, 0.664);
+    font-size: 14px;
+}
+
+.subscribe-value {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.subscribe-acess {
+    color: var(--cinza-claro);
+    padding-bottom: 2em;
+}
+
+.secao__subscribe button {
+    border: 0;
+    width: 235px;
+    padding: 0.7em;
+    background-color: var(--amarelo-brilhante);
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--cinza-claro);
+}
+
+/* SEÇÃO BENEFÍCIOS */
+
+.secao__benefits {
+    grid-area: benefits;
+    background-color: #49BEBD;
+    padding: 2em;
+}
+
+.secao__benefits h2 {
+    color: var(--cinza-claro);
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.benefits-text {
+    color: hsla(203, 44%, 93%, 0.747);
+}
+
+.secao__benefits p {
+    line-height: 1.3em;
+}
